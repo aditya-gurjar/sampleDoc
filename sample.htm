@@ -1,0 +1,41 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+<title>Sample Page</title>
+
+<script>
+function printName() {
+  let enteredName = document.getElementById("fname").value;
+  if(enteredName=="")
+    document.getElementById("result").innerHTML = "Hello, please enter your name in the box before submitting.";
+  else
+    document.getElementById("result").innerHTML = "Hello " + enteredName + "!";
+  }
+</script>
+
+<style>
+
+#fname:focus {
+  background-color: lightblue;
+  }
+
+#submit {
+  cursor: pointer;
+  }
+
+</style>
+</head>
+
+<body>
+
+  <h1 style="font-family:Georgia;text-align:center">Sample Page</h1>
+  <div style="text-align:center">  
+    <h2>Please enter your name in the box below.</h2>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="button" id="submit" onclick="printName()" value="Submit"><br><br>
+    <p id="result"></p>
+  </div>
+
+</body>
+</html>
