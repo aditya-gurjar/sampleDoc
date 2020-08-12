@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sample Page</title>
+
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#submit").click(function(){
+  let enteredName = $("#fname").val();
+  if(enteredName == "") {
+    $("#result").text("Please enter your name in the box before submitting!");
+  } else {
+    $("#result").text("Hello " + enteredName + "!");
+  }
+  });
+});
+</script>
+
+<style>
+#fname:focus {
+  background-color: lightblue;
+  }
+#submit {
+  cursor: pointer;
+  }
+</style>
+
+</head>
+<body>
+
+  <h1 style="font-family:Georgia;text-align:center">Sample Page</h1>
+  <div style="text-align:center">  
+    <h2>Please enter your name in the box below.</h2>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="button" id="submit" value="Submit"><br><br>
+    <p id="result"></p>
+  </div>
+
+</body>
+</html>
