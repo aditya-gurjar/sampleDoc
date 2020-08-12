@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -7,26 +7,24 @@
 <script>
 function printName() {
   let enteredName = document.getElementById("fname").value;
-  if(enteredName=="")
+  if(enteredName=="") {
     document.getElementById("result").innerHTML = "Hello, please enter your name in the box before submitting.";
-  else
+  } else {
     document.getElementById("result").innerHTML = "Hello " + enteredName + "!";
+    }
   }
 </script>
 
 <style>
-
 #fname:focus {
   background-color: lightblue;
   }
-
 #submit {
   cursor: pointer;
   }
-
 </style>
+  
 </head>
-
 <body>
 
   <h1 style="font-family:Georgia;text-align:center">Sample Page</h1>
