@@ -27,7 +27,6 @@ class App extends React.Component {
     		<h2>Please enter your name in the box below.</h2>
     		<input type="text" id="fname" name="fname" onChange={this.myChangeHandler} /><br /><br />
     		<input type="Submit" /><br /><br />
-    		<p id="result"></p>
     	</form>
 			);
 	}
